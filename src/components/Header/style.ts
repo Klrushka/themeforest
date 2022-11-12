@@ -29,6 +29,7 @@ export const LinkWrapper = styled(Link)`
   margin: ${props => props.theme.size.navItemMargin};
   align-items: center;
   justify-content: center;
+  display: inline-block;
 `;
 
 export const ExpandArrow = styled.img`
