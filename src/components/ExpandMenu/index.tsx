@@ -1,7 +1,7 @@
 import React from 'react';
 
-import arrowIcon from '../../../assets/arrowIcon.png';
-import { pages } from '../../../mock/pages';
+import arrowIcon from '../../assets/arrowIcon.png';
+import { pages } from '../../mock/pages';
 
 import {
   ArrowIcon,
@@ -19,7 +19,7 @@ export const ExpandMenu: React.FC<{ onMouseOutHandler: any }> = (
       <ExpandMenuItems>
         {pages.map(({ to, value }) => (
           <ExpandMenuItem key={`${to}${value}`}>
-            <LinkWrapper to={to} >{value}</LinkWrapper>
+            <LinkWrapper to={to}>{value}</LinkWrapper>
             <ArrowIcon src={arrowIcon} />
           </ExpandMenuItem>
         ))}

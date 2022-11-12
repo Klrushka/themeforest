@@ -9,8 +9,7 @@ import {
   getExpanOnMouseOutHandler
 } from '../../helpers/expandMenuHandlers';
 import { navPanelRoutes } from '../../mock/navRoutes';
-
-import { ExpandMenu } from './ExpandMenu';
+import { ExpandMenu } from '../ExpandMenu';
 
 import {
   DemoButton,
