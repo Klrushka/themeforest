@@ -40,7 +40,7 @@ export const LinkWrapper = styled(Link)`
   display: inline-block;
 
   ${ExpandMenuItem}:hover & {
-    font-weight: bold;
+    font-weight: 600;
   }
 `;
 
