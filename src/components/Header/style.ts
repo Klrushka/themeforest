@@ -40,6 +40,10 @@ export const ExpandArrow = styled.img`
 
 export const DemoButton = styledMUI(Button)({
   textTransform: 'none',
-  fontFamily: '14px',
-  fontStyle: 'normal'
+  fontFamily: 'Manrope',
+  background: 'rgb(24, 95, 225)',
+  fontStyle: 'normal',
+  '&:hover': {
+    background: 'rgba(70, 125, 255, 1)'
+  }
 }) as typeof Button;
