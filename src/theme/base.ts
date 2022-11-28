@@ -1,6 +1,6 @@
 export const base = {
   font: {
-    headerFont: 'Manrope'
+    mainFont: 'Manrope'
   },
   size: {
     headerFontWeight: '500',
@@ -34,6 +34,17 @@ export const base = {
     footerArrowMargin: '0px 0px 0px 7px',
     footerSocialLinksMargin: '0px 16px 0px 0px',
     footerFontSize: '14px',
-    footerCopirateMargin: '0px 0px 0px 530px'
+    footerCopirateMargin: '0px 0px 0px 520px',
+    heroBlockInformationalSectionPadding: '73px 405px 92px 405px',
+    heroBlockTitleWidth: '540px',
+    heroBlockDescriptionWidth: '350px',
+    heroBlockTitleFontWeight: '800',
+    heroBlockTitleFontSize: '46px',
+    heroBlockTitleMargin: '0px 220px 0px 0px',
+    heroBlockDescriptionFontSize: '16px',
+    heroBlockLearnMoreButtonTextHeight: '90px',
+    heroBlockLearnMoreButtonTextWidth: '104px',
+    heroBlockLearnMoreButtonTextBorderRadius: '70%',
+    heroBlockLearnMoreButtonTextFontSize: '12px'
   }
 };
