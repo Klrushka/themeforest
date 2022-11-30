@@ -47,7 +47,7 @@ export const LinkWrapper = styled(Link)`
 export const ArrowIcon = styled.img`
   opacity: 0;
   transition-duration: 0.3s;
-  margin-left: ${props => props.theme.size.ultraSmallMargin};
+  margin-left: 90px;
   width: 14px;
   height: 7.5px;
 

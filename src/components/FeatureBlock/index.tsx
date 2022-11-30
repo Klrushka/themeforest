@@ -1,13 +1,30 @@
 import React from 'react';
 
+import featureImg from '../../assets/featureImg.png';
 import {
+  discoverInfo,
+  discoverMoreButton,
+  learnMoreButton,
+  learnText,
+  learnTitle,
+  titleAccentWord,
+  titleFirstPart,
+  titlSecondPart
+} from '../../mock/data/feature-block/data';
+
+import {
+  AccentWord,
   DiscoverBlock,
   DiscoverInfo,
   DiscoverInfoBlock,
-  DiscoverMoreButton,
   DiscoverTitleBlock,
   FeaturBlockWrapper,
-  LearnBlock
+  ImageBlock,
+  LearnBlock,
+  LearnInfoBlock,
+  LearnText,
+  LearnTitleBlock,
+  MoreButton
 } from './style';
 
 export const FeatureBlock: React.FC = () => {
@@ -15,21 +32,26 @@ export const FeatureBlock: React.FC = () => {
     <FeaturBlockWrapper>
       <DiscoverBlock>
         <DiscoverTitleBlock>
-          The newest business analytics platform
+          {titleFirstPart} <AccentWord> {titleAccentWord} </AccentWord>{' '}
+          {titlSecondPart}
         </DiscoverTitleBlock>
         <DiscoverInfoBlock>
           <DiscoverInfo>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo.
+            {discoverInfo}
           </DiscoverInfo>
-          <DiscoverMoreButton variant={'contained'}>
-              Discover more
-            </DiscoverMoreButton>
+          <MoreButton variant={'contained'}>{discoverMoreButton}</MoreButton>
         </DiscoverInfoBlock>
       </DiscoverBlock>
-      <LearnBlock></LearnBlock>
+      <LearnBlock>
+        <ImageBlock src={featureImg} alt={'featureImg'} />
+        <LearnInfoBlock>
+          <LearnTitleBlock>{learnTitle}</LearnTitleBlock>
+          <LearnText>
+            {learnText}
+          </LearnText>
+          <MoreButton variant={'contained'}>{learnMoreButton}</MoreButton>
+        </LearnInfoBlock>
+      </LearnBlock>
     </FeaturBlockWrapper>
   );
 };
