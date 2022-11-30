@@ -12,10 +12,12 @@ export const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;
   font-weight: ${props => props.theme.font.headerFontWeight};
+  width: 100%;
+  justify-content: center;
 `;
 
 export const Logo = styled.img`
-  margin: ${props => props.theme.size.logoMargin};
+  margin-right: ${props => props.theme.size.smallMargin};
 `;
 
 export const Navigation = styled.nav`
@@ -26,7 +28,7 @@ export const LinkWrapper = styled(Link)`
   text-decoration: none;
   color: ${props => props.theme.color.headerTextNavItems};
   font-size: ${props => props.theme.size.navItemsFontSize};
-  margin: ${props => props.theme.size.navItemMargin};
+  margin-right: ${props => props.theme.size.verySmallMargin};
   align-items: center;
   justify-content: center;
   display: inline-block;
@@ -36,6 +38,12 @@ export const ExpandArrow = styled.img`
   height: 5.5px;
   width: 10px;
   margin: 0px 0px 0.5px 6px;
+`;
+
+export const HeaderInfo = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `;
 
 export const DemoButton = styledMUI(Button)({

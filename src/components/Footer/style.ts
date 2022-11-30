@@ -4,42 +4,50 @@ import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`
   background: ${props => props.theme.color.background};
-  padding: ${props => props.theme.size.footerWrapperPadding};
+  padding: 50px 405px 40px 405px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 export const FooterLogo = styled.img`
-  margin: ${props => props.theme.size.footerLogoMargin};
+  margin: 0%;
 `;
 
 export const LinksSection = styled.div`
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
 `;
 
 export const ContactsSection = styled.div`
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-top: 40px;
 `;
 
 export const ContactsBlock = styled.div`
-  margin: ${props => props.theme.size.footerContactBlockMargin};
+  width: 50%;
 `;
 export const SocialBlock = styled.div`
-  margin: ${props => props.theme.size.footerSocialBlockMargin};
 `;
 
 export const JuditialSection = styled.div`
-  margin: ${props => props.theme.size.footerJudialSectionMargin};
+  margin-top: ${props => props.theme.size.verySmallMargin};
+  display: flex;
+  justify-content: flex-start;
 `;
 
 export const TitleOfBlock = styled.p`
-  margin: ${props => props.theme.size.footerTitleBlockFontMargin};
+  margin: '0px 0px 15px 0px'
   font-weight: ${props => props.theme.size.footerTitleBlockFontWeight};
 `;
 
 export const TelAndMailBlock = styled.div`
   display: grid;
   width: max-content;
-  margin: ${props => props.theme.size.footerContactInfoMargin};
+  margin-right: ${props => props.theme.size.verySmallMargin};
   font-size: ${props => props.theme.size.footerFontSize};
 `;
 
@@ -48,11 +56,11 @@ export const ContactInfo = styled.div`
 `;
 
 export const Telephone = styled.span`
-  margin: ${props => props.theme.size.footerTelephoneMargin};
+  margin-bottom: ${props => props.theme.size.ultraSmallMargin};
 `;
 
 export const Address = styled.span`
-  margin: ${props => props.theme.size.footerAddressMargin};
+  margin-bottom: ${props => props.theme.size.ultraSmallMargin};
 `;
 
 export const Mail = styled(Link)`
@@ -73,7 +81,7 @@ export const AddressDrivingDirectionBlock = styled.div`
 
 export const FooterNavigation = styled.ul`
   display: grid;
-  margin: ${props => props.theme.size.footerNavMargin};
+  margin: 0px 120px 40px 0px;
   padding: 0px;
 `;
 
@@ -83,7 +91,7 @@ export const Line = styled.hr`
 `;
 
 export const FooterArrow = styled.img`
-  margin: ${props => props.theme.size.footerArrowMargin};
+  margin-left: ${props => props.theme.size.ultraSmallMargin};
 `;
 
 export const SocialLinks = styled.ul`
@@ -91,14 +99,14 @@ export const SocialLinks = styled.ul`
 `;
 
 export const SocialLinkWrapper = styled(Link)`
-  margin: ${props => props.theme.size.footerSocialLinksMargin};
+  margin-right: ${props => props.theme.size.ultraSmallMargin};
 `;
 
 export const LinkWrapper = styled(Link)`
   width: max-content;
   text-decoration: none;
   color: ${props => props.theme.color.black};
-  margin: ${props => props.theme.size.footerNavLinkMargin};
+  margin: 0px 0px 10px 0px;
 
   &:first-child {
     font-weight: 700;
@@ -108,10 +116,16 @@ export const LinkWrapper = styled(Link)`
 export const JudialLink = styled(Link)`
   font-size: ${props => props.theme.size.footerFontSize};
   text-decoration: none;
-  margin: ${props => props.theme.size.footerJudialLinkMargin};
+  margin-right: ${props => props.theme.size.verySmallMargin};
   color: ${props => props.theme.color.grey};
-
   &:last-child {
-    margin: ${props => props.theme.size.footerCopirateMargin};
+    margin-left: 50%;
+    display: flex;
+    justify-content: end;
   }
+`;
+
+export const LinksWrapper = styled.div`
+  display: flex;
+  margin: 0%;
 `;

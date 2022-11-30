@@ -26,6 +26,7 @@ import {
   JuditialSection,
   Line,
   LinksSection,
+  LinksWrapper,
   LinkWrapper,
   Mail,
   SocialBlock,
@@ -41,29 +42,31 @@ export const Footer: React.FC = () => {
     <FooterWrapper>
       <LinksSection>
         <FooterLogo src={footerLogo} alt={'footerLogo'} />
-        <FooterNavigation>
-          {aboutFooterNavLinks.map(({ value, to }) => (
-            <LinkWrapper to={to} key={`${to}${value}`}>
-              {value}
-            </LinkWrapper>
-          ))}
-        </FooterNavigation>
-        <FooterNavigation>
-          {' '}
-          {informationFooterNavLinks.map(({ value, to }) => (
-            <LinkWrapper to={to} key={`${to}${value}`}>
-              {value}
-            </LinkWrapper>
-          ))}
-        </FooterNavigation>
-        <FooterNavigation>
-          {' '}
-          {serviceFooterNavLinks.map(({ value, to }) => (
-            <LinkWrapper to={to} key={`${to}${value}`}>
-              {value}
-            </LinkWrapper>
-          ))}
-        </FooterNavigation>
+        <LinksWrapper>
+          <FooterNavigation>
+            {aboutFooterNavLinks.map(({ value, to }) => (
+              <LinkWrapper to={to} key={`${to}${value}`}>
+                {value}
+              </LinkWrapper>
+            ))}
+          </FooterNavigation>
+          <FooterNavigation>
+            {' '}
+            {informationFooterNavLinks.map(({ value, to }) => (
+              <LinkWrapper to={to} key={`${to}${value}`}>
+                {value}
+              </LinkWrapper>
+            ))}
+          </FooterNavigation>
+          <FooterNavigation>
+            {' '}
+            {serviceFooterNavLinks.map(({ value, to }) => (
+              <LinkWrapper to={to} key={`${to}${value}`}>
+                {value}
+              </LinkWrapper>
+            ))}
+          </FooterNavigation>
+        </LinksWrapper>
       </LinksSection>
       <Line />
       <ContactsSection>

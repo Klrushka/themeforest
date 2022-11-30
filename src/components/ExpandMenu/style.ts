@@ -6,13 +6,13 @@ export const ExpandMenuWrapper = styled.div`
   z-index: 10;
   position: absolute;
   background-color: white;
-  min-width: ${props => props.theme.size.expandMenuwidth};
+  min-width: 190px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  margin: ${props => props.theme.size.expandMenuwrapperMargin};
-  width: ${props => props.theme.size.expandMenuWidth};
+  margin: '10px 0px 0px 0px';
+  width: 190px;
 
   filter: ${props => props.theme.color.expandMenuWrapperShadows};
   border-radius: 6px;
@@ -23,12 +23,12 @@ export const ExpandMenuWrapper = styled.div`
 `;
 export const ExpandMenuItems = styled.ul`
   list-style-type: none;
-  margin: ${props => props.theme.size.expandMenuItemsMargin};
-  padding: ${props => props.theme.size.expandMenuItemsPadding};
+  margin: 0;
+  padding: 0;
 `;
 export const ExpandMenuItem = styled.li`
-  min-width: ${props => props.theme.size.expandMenuwidth};
-  margin: ${props => props.theme.size.expandMenuItemMargin};
+  min-width: 190px;
+  margin: 10px 23px 10px 20px;
 `;
 
 export const LinkWrapper = styled(Link)`
@@ -36,7 +36,7 @@ export const LinkWrapper = styled(Link)`
   color: black;
   padding: 0px;
   font-size: 14px;
-  min-width: ${props => props.theme.size.expandLinkWrapperWidth};
+  min-width: 120px
   display: inline-block;
 
   ${ExpandMenuItem}:hover & {
@@ -47,7 +47,7 @@ export const LinkWrapper = styled(Link)`
 export const ArrowIcon = styled.img`
   opacity: 0;
   transition-duration: 0.3s;
-  margin: ${props => props.theme.size.expandArrowIconMargin};
+  margin-left: ${props => props.theme.size.ultraSmallMargin};
   width: 14px;
   height: 7.5px;
 
