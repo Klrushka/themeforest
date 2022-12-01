@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { BenefitsBlock } from '../../components/BenefitsBlock';
 import { CompanyOverviewBlock } from '../../components/CompanyOverviewBlock';
 import { FeatureBlock } from '../../components/FeatureBlock';
 import { Footer } from '../../components/Footer';
@@ -13,6 +14,7 @@ export const MainPage: React.FC = () => {
       <HeroBlock />
       <FeatureBlock />
       <CompanyOverviewBlock />
+      <BenefitsBlock />
       <Footer />
     </>
   );

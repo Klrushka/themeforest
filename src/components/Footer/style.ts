@@ -118,8 +118,9 @@ export const JudialLink = styled(Link)`
   text-decoration: none;
   margin-right: ${props => props.theme.size.verySmallMargin};
   color: ${props => props.theme.color.grey};
+  width: 100%;
   &:last-child {
-    margin-left: 50%;
+    margin-left: 20%;
     display: flex;
     justify-content: end;
   }

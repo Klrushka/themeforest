@@ -7,7 +7,7 @@ export const base = {
     verySmallMargin: '40px',
     smallMargin: '145px',
     mediumMargin: '220px',
-    blockCenterMargin: '120px 405px 120px 405px',
+    blockCenterIndent: '120px 405px 120px 405px',
     fontWeight0: '400',
     fontWeight1: '500',
     fontWeight2: '600',
@@ -22,7 +22,7 @@ export const base = {
     fontSize7: '46px',
     fontSize8: '51px',
     fontSize9: '57px',
-    fontSiz110: '62px',
+    fontSize10: '62px',
     logoMargin: '40px 145px 40px 405px',
     navItemsMargin: '51px 145px 51px 0px'
   }

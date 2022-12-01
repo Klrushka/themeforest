@@ -6,7 +6,7 @@ export const CompanyOverviewSectonWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin: 10%;
-  margin: ${props => props.theme.size.blockCenterMargin};  
+  margin: ${props => props.theme.size.blockCenterIndent};  
 `;
 
 export const Title = styled.div`

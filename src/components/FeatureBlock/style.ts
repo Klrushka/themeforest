@@ -10,7 +10,7 @@ export const FeaturBlockWrapper = styled.div`
 export const DiscoverBlock = styled.div`
   display: flex;
   justify-content: center;
-  margin: ${props => props.theme.size.blockCenterMargin};
+  margin: ${props => props.theme.size.blockCenterIndent};
 `;
 
 export const LearnBlock = styled.div`
@@ -23,6 +23,7 @@ export const DiscoverTitleBlock = styled.div`
   font-weight: ${props => props.theme.size.fontWeight4};
   font-size: 57px;
   width: 70%;
+  margin-right: ${props => props.theme.size.verySmallMargin};
 `;
 
 export const DiscoverInfoBlock = styled.div`
