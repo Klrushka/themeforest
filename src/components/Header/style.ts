@@ -27,7 +27,7 @@ export const Navigation = styled.nav`
 export const LinkWrapper = styled(Link)`
   text-decoration: none;
   color: ${props => props.theme.color.headerTextNavItems};
-  font-size: ${props => props.theme.size.navItemsFontSize};
+  font-size: ${props => props.theme.size.fontSize3};
   margin-right: ${props => props.theme.size.verySmallMargin};
   align-items: center;
   justify-content: center;

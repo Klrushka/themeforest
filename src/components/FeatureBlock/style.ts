@@ -10,7 +10,7 @@ export const FeaturBlockWrapper = styled.div`
 export const DiscoverBlock = styled.div`
   display: flex;
   justify-content: center;
-  margin: 120px 405px 120px 405px;
+  margin: ${props => props.theme.size.blockCenterMargin};
 `;
 
 export const LearnBlock = styled.div`

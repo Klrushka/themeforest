@@ -20,7 +20,7 @@ export const TitleWrapper = styled.div`
 
 export const DescriptionWrapper = styled.span`
   color:  ${props => props.theme.color.grey};
-  font-size: ${props => props.theme.size.heroBlockDescriptionFontSize};
+  font-size: ${props => props.theme.size.fontSize4};
   width: 40%;
   display: flex;
 `;
@@ -35,7 +35,7 @@ export const ImageWrapper = styled.div`
 export const Title = styled.span`
   width: 50%;
   font-weight: ${props => props.theme.size.heroBlockTitleFontWeight};
-  font-size:  ${props => props.theme.size.heroBlockTitleFontSize};
+  font-size:  ${props => props.theme.size.fontSize7};
   font-style: normal;
   
   color: ${props => props.theme.color.black};;
@@ -70,7 +70,7 @@ export const LearnMoreButtonText = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: ${props => props.theme.size.heroBlockLearnMoreButtonTextFontSize};
+  font-size: ${props => props.theme.size.fontSize2};
   border-width: 1px;
   border-color:  ${props => props.theme.size.helperBlue3};
   color:  ${props => props.theme.color.white};

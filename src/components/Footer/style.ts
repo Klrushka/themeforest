@@ -48,7 +48,7 @@ export const TelAndMailBlock = styled.div`
   display: grid;
   width: max-content;
   margin-right: ${props => props.theme.size.verySmallMargin};
-  font-size: ${props => props.theme.size.footerFontSize};
+  font-size: ${props => props.theme.size.fontSize3};
 `;
 
 export const ContactInfo = styled.div`
@@ -76,7 +76,7 @@ export const DrivingDerection = styled(Link)`
 `;
 export const AddressDrivingDirectionBlock = styled.div`
   display: grid;
-  font-size: ${props => props.theme.size.footerFontSize};
+  font-size: ${props => props.theme.size.fontSize3};
 `;
 
 export const FooterNavigation = styled.ul`
@@ -114,7 +114,7 @@ export const LinkWrapper = styled(Link)`
 `;
 
 export const JudialLink = styled(Link)`
-  font-size: ${props => props.theme.size.footerFontSize};
+  font-size: ${props => props.theme.size.fontSize3};
   text-decoration: none;
   margin-right: ${props => props.theme.size.verySmallMargin};
   color: ${props => props.theme.color.grey};

@@ -5,7 +5,7 @@ import {
   heroBlockCompanyName,
   heroBlockDescription,
   heroBlockTitle
-} from '../../mock/data/hero-block/data';
+} from '../../mock/data/heroBlock/data';
 
 import {
   DescriptionWrapper,

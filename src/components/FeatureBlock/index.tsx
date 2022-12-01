@@ -10,7 +10,7 @@ import {
   titleAccentWord,
   titleFirstPart,
   titlSecondPart
-} from '../../mock/data/feature-block/data';
+} from '../../mock/data/featureBlock/data';
 
 import {
   AccentWord,
