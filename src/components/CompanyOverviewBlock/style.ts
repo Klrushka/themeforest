@@ -12,6 +12,7 @@ export const CompanyOverviewSectonWrapper = styled.div`
 export const Title = styled.div`
   font-family: ${props => props.theme.font.mainFont}; 
   font-size: ${props => props.theme.size.fontSize6};  
+  font-weight: ${props => props.theme.size.fontWeight4};  
 `;
 
 export const OverviewSection = styled.div`
