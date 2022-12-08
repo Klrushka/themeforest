@@ -17,7 +17,7 @@ export const HeaderWrapper = styled.header`
 `;
 
 export const Logo = styled.img`
-  margin-right: ${props => props.theme.size.smallMargin};
+  margin-right: ${props => props.theme.size.indent8};
 `;
 
 export const Navigation = styled.nav`
@@ -28,7 +28,7 @@ export const LinkWrapper = styled(Link)`
   text-decoration: none;
   color: ${props => props.theme.color.headerTextNavItems};
   font-size: ${props => props.theme.size.fontSize3};
-  margin-right: ${props => props.theme.size.verySmallMargin};
+  margin-right: ${props => props.theme.size.indent5};
   align-items: center;
   justify-content: center;
   display: inline-block;

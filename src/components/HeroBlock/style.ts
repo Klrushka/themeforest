@@ -15,7 +15,8 @@ export const InformationSection = styled.div`
 
 export const TitleWrapper = styled.div`
   width: 60%;
-  margin-right: ${props => props.theme.size.mediumMargin};  
+  margin-right: ${props => props.theme.size.indent11};  
+  color: ${props => props.theme.color.black};
 `;
 
 export const DescriptionWrapper = styled.span`
@@ -33,11 +34,11 @@ export const ImageWrapper = styled.div`
 `;
 
 export const Title = styled.span`
+  font-family: ${props => props.theme.font.mainFont};
   width: 50%;
-  font-weight: ${props => props.theme.size.heroBlockTitleFontWeight};
+  font-weight: ${props => props.theme.size.fontWeight4};
   font-size:  ${props => props.theme.size.fontSize7};
   font-style: normal;
-  
   color: ${props => props.theme.color.black};;
 
   &:last-child {

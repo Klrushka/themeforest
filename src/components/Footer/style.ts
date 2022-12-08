@@ -34,7 +34,7 @@ export const SocialBlock = styled.div`
 `;
 
 export const JuditialSection = styled.div`
-  margin-top: ${props => props.theme.size.verySmallMargin};
+  margin-top: ${props => props.theme.size.indent5};
   display: flex;
   justify-content: flex-start;
 `;
@@ -42,12 +42,13 @@ export const JuditialSection = styled.div`
 export const TitleOfBlock = styled.p`
   margin: '0px 0px 15px 0px'
   font-weight: ${props => props.theme.size.footerTitleBlockFontWeight};
+  color: ${props => props.theme.color.black};
 `;
 
 export const TelAndMailBlock = styled.div`
   display: grid;
   width: max-content;
-  margin-right: ${props => props.theme.size.verySmallMargin};
+  margin-right: ${props => props.theme.size.indent5};
   font-size: ${props => props.theme.size.fontSize3};
 `;
 
@@ -56,11 +57,11 @@ export const ContactInfo = styled.div`
 `;
 
 export const Telephone = styled.span`
-  margin-bottom: ${props => props.theme.size.ultraSmallMargin};
+  margin-bottom: ${props => props.theme.size.indent0};
 `;
 
 export const Address = styled.span`
-  margin-bottom: ${props => props.theme.size.ultraSmallMargin};
+  margin-bottom: ${props => props.theme.size.indent0};
 `;
 
 export const Mail = styled(Link)`
@@ -91,7 +92,7 @@ export const Line = styled.hr`
 `;
 
 export const FooterArrow = styled.img`
-  margin-left: ${props => props.theme.size.ultraSmallMargin};
+  margin-left: ${props => props.theme.size.indent0};
 `;
 
 export const SocialLinks = styled.ul`
@@ -99,7 +100,7 @@ export const SocialLinks = styled.ul`
 `;
 
 export const SocialLinkWrapper = styled(Link)`
-  margin-right: ${props => props.theme.size.ultraSmallMargin};
+  margin-right: ${props => props.theme.size.indent0};
 `;
 
 export const LinkWrapper = styled(Link)`
@@ -116,7 +117,7 @@ export const LinkWrapper = styled(Link)`
 export const JudialLink = styled(Link)`
   font-size: ${props => props.theme.size.fontSize3};
   text-decoration: none;
-  margin-right: ${props => props.theme.size.verySmallMargin};
+  margin-right: ${props => props.theme.size.indent5};
   color: ${props => props.theme.color.grey};
   width: 100%;
   &:last-child {

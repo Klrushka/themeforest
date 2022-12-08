@@ -17,7 +17,8 @@ export const Title = styled.span`
   font-family: ${props => props.theme.font.mainFont};
   font-weight: ${props => props.theme.size.fontWeight4};
   font-size: ${props => props.theme.size.fontSize6};
-  margin-bottom: ${props => props.theme.size.verySmallMargin};
+  margin-bottom: ${props => props.theme.size.indent5};
+  color: ${props => props.theme.color.black};
 `;
 
 export const DescriptionInfo = styled.span`

@@ -5,8 +5,8 @@ export const BenefitCardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 25px;
-  margin-right: ${props => props.theme.size.verySmallMargin};
-  margin-bottom: ${props => props.theme.size.verySmallMargin};
+  margin-right: ${props => props.theme.size.indent5};
+  margin-bottom: ${props => props.theme.size.indent5};
   width: 70%;
   box-shadow: 0px 12px 30px 17px rgba(24, 92, 255, 0.04);
   border-radius: 6px;
@@ -14,7 +14,7 @@ export const BenefitCardWrapper = styled.div`
 
 export const CardIcon = styled.img`
   width: fit-content;
-  margin-bottom: ${props => props.theme.size.ultraSmallMargin};
+  margin-bottom: ${props => props.theme.size.indent0};
 `;
 
 export const CardTitle = styled.span`
@@ -22,7 +22,7 @@ export const CardTitle = styled.span`
   font-size: ${props => props.theme.size.fontSize5};
   font-family: ${props => props.theme.font.mainFont};
   color: ${props => props.theme.color.black};
-  margin-bottom: ${props => props.theme.size.ultraSmallMargin};
+  margin-bottom: ${props => props.theme.size.indent0};
   width: fit-content;
 `;
 

@@ -6,6 +6,7 @@ import { FeatureBlock } from '../../components/FeatureBlock';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
 import { HeroBlock } from '../../components/HeroBlock';
+import { TestimonialsBlock } from '../../components/TestimonialBlock';
 
 export const MainPage: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ export const MainPage: React.FC = () => {
       <FeatureBlock />
       <CompanyOverviewBlock />
       <BenefitsBlock />
+      <TestimonialsBlock />
       <Footer />
     </>
   );

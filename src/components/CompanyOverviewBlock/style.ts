@@ -13,12 +13,13 @@ export const Title = styled.div`
   font-family: ${props => props.theme.font.mainFont}; 
   font-size: ${props => props.theme.size.fontSize6};  
   font-weight: ${props => props.theme.size.fontWeight4};  
+  color: ${props => props.theme.color.black};
 `;
 
 export const OverviewSection = styled.div`
   display: flex;
-  margin-top: ${props => props.theme.size.verySmallMargin};
-  margin-bottom: ${props => props.theme.size.verySmallMargin};
+  margin-top: ${props => props.theme.size.indent5};
+  margin-bottom: ${props => props.theme.size.indent5};
   justify-content: center;
 `;
 
@@ -58,7 +59,7 @@ export const OverviewLabel = styled.span`
 export const OverviewItem = styled.li`
   display: flex;
   flex-direction: column;
-  margin-right: ${props => props.theme.size.verySmallMargin};  
+  margin-right: ${props => props.theme.size.indent5};  
 `;
 
 export const ClientLogo = styled.li`
