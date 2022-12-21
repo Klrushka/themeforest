@@ -1,44 +1,43 @@
-import { RefObject } from 'react';
-
 import { createSlice } from '@reduxjs/toolkit';
 
-export const leftButton = createSlice({
-  name: 'leftButton',
+import { testimonialsCardsInfo } from '../mock/data/testimonialsBlock/data';
+// !!!!!!!!!!!!!!!!!!!
+// TODO REFACTOR
+export const testimonialsBlockState = createSlice({
+  name: 'testimonialsBlockState',
   initialState: {
-    value: true
+    value: testimonialsCardsInfo.slice(0, 3),
+    isActiveLeft: false,
+    isActiveRight: true,
+    iterator: 3,
+    next: 3
   },
   reducers: {
-    isDisabledLeftButton: (state, ref: { payload: RefObject<HTMLDivElement> }) => {
-      const { current } = ref.payload;
-      if (current !== null && current.scrollLeft === 0) {
-        state.value = true;
-      } else {
-        state.value = false;
+    testimonialsRightButton: (state) => {
+      const cardsLength = testimonialsCardsInfo.length;
+      state.iterator = Math.abs(state.iterator);
+      state.next = 3;
+      state.value = testimonialsCardsInfo.slice(state.iterator, state.iterator + state.next);
+      state.iterator += state.next;
+      if (state.iterator >= cardsLength) {
+        state.next = state.iterator - cardsLength;
+        state.iterator = 0;
+        state.value = [...state.value, ...(testimonialsCardsInfo.slice(state.iterator, state.iterator + state.next))];
+      }
+    },
+    testimonialsLeftButton: (state) => {
+      const cardsLength = testimonialsCardsInfo.length;
+      state.next = 3;
+      state.value = testimonialsCardsInfo.slice(state.iterator, state.iterator + state.next);
+      if (state.iterator === -state.next) state.value = testimonialsCardsInfo.slice(-state.next);
+      state.iterator -= state.next;
+      if (state.iterator <= -cardsLength) {
+        state.iterator = 3;
+        state.value = [...state.value, ...(testimonialsCardsInfo.slice(state.iterator, state.iterator + state.next))];
       }
     }
   }
 });
 
-// TODO delete logs
-export const rightButton = createSlice({
-  name: 'rightButton',
-  initialState: {
-    value: false
-  },
-  reducers: {
-    isDisabledRightButton: (state, ref: { payload: RefObject<HTMLDivElement> }) => {
-      const { current } = ref.payload;
-      if (current !== null && current.scrollLeft >= current.clientWidth) {
-        console.log(1);
-        state.value = true;
-      } else {
-        state.value = false;
-      }
-    }
-  }
-});
-
-export const leftButtonReducer = leftButton.reducer;
-export const { isDisabledLeftButton } = leftButton.actions;
-export const rightButtonReducer = rightButton.reducer;
-export const { isDisabledRightButton } = rightButton.actions;
+export const testimonialsReducer = testimonialsBlockState.reducer;
+export const { testimonialsRightButton, testimonialsLeftButton } = testimonialsBlockState.actions;

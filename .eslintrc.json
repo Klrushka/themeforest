@@ -23,6 +23,7 @@
     "@typescript-eslint/space-before-function-paren": ["off"],
     "@typescript-eslint/no-use-before-define": ["error"],
     "@typescript-eslint/triple-slash-reference": ["off"],
+    "@typescript-eslint/consistent-type-definitions": ["off"],
     "max-len": ["warn", { "code": 120 }],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",

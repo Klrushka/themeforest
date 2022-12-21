@@ -17,7 +17,7 @@ import {
   MainImageSection,
   Title,
   TitleWrapper
-} from './style';
+} from './styled';
 
 export const HeroBlock: React.FC = () => {
   return (

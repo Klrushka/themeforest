@@ -25,19 +25,37 @@ export const testimonialsCardsInfo = [
   },
   {
     icon: avatar1,
-    name: 'Alex Bern1',
-    position: 'CEO by PixelPerfect',
+    name: 'Tigran1 Nazaret',
+    position: 'Data analyst',
     description: 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.'
   },
   {
     icon: avatar2,
-    name: 'Ruben Chifundo1',
-    position: 'CEO by NOX',
+    name: 'Tigran2 Nazaret',
+    position: 'Data analyst',
     description: 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.'
   },
   {
     icon: avatar3,
-    name: 'Tigran Nazaret1',
+    name: 'Tigran3 Nazaret',
+    position: 'Data analyst',
+    description: 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.'
+  },
+  {
+    icon: avatar1,
+    name: 'Tigran4 Nazaret',
+    position: 'Data analyst',
+    description: 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.'
+  },
+  {
+    icon: avatar2,
+    name: 'Tigran5 Nazaret',
+    position: 'Data analyst',
+    description: 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.'
+  },
+  {
+    icon: avatar3,
+    name: 'Tigran6 Nazaret',
     position: 'Data analyst',
     description: 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.'
   }

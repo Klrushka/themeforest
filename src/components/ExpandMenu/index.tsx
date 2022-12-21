@@ -9,7 +9,7 @@ import {
   ExpandMenuItems,
   ExpandMenuWrapper,
   LinkWrapper
-} from './style';
+} from './styled';
 
 export const ExpandMenu: React.FC<{ onMouseOutHandler: any }> = (
   onMouseOutHandler: any

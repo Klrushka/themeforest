@@ -42,7 +42,7 @@ export const JuditialSection = styled.div`
 export const TitleOfBlock = styled.p`
   margin: '0px 0px 15px 0px'
   font-weight: ${props => props.theme.size.footerTitleBlockFontWeight};
-  color: ${props => props.theme.color.black};
+  color: ${props => props.theme.color.blackFont};
 `;
 
 export const TelAndMailBlock = styled.div`
@@ -67,13 +67,13 @@ export const Address = styled.span`
 export const Mail = styled(Link)`
   font-weight: ${props => props.theme.size.footerFontWeight};
   text-decoration: none;
-  color: ${props => props.theme.color.black};;
+  color: ${props => props.theme.color.blackFont};;
 `;
 
 export const DrivingDerection = styled(Link)`
   font-weight: ${props => props.theme.size.footerFontWeight};
   text-decoration: none;
-  color: ${props => props.theme.color.black};;
+  color: ${props => props.theme.color.blackFont};;
 `;
 export const AddressDrivingDirectionBlock = styled.div`
   display: grid;
@@ -106,7 +106,7 @@ export const SocialLinkWrapper = styled(Link)`
 export const LinkWrapper = styled(Link)`
   width: max-content;
   text-decoration: none;
-  color: ${props => props.theme.color.black};
+  color: ${props => props.theme.color.blackFont};
   margin: 0px 0px 10px 0px;
 
   &:first-child {

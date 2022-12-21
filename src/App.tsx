@@ -9,16 +9,19 @@ import { getTheme } from './theme/themeHandler';
 import { Themes } from './theme/themes';
 
 import { store } from './store';
+import { GlobalLayout } from './styled';
 
 export const App: React.FC = () => {
   const theme = getTheme(Themes.LIGHT);
   return (
     <Provider store={store}>
-        <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
+        <GlobalLayout>
           <Routes>
             <Route path={'/'} element={<MainPage />} />
           </Routes>
-        </ThemeProvider>
+        </GlobalLayout>
+      </ThemeProvider>
     </Provider>
   );
 };

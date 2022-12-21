@@ -25,7 +25,7 @@ import {
   LearnText,
   LearnTitleBlock,
   MoreButton
-} from './style';
+} from './styled';
 
 export const FeatureBlock: React.FC = () => {
   return (

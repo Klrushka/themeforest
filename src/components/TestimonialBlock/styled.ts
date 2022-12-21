@@ -6,7 +6,10 @@ import { styled as styledMUI } from '@mui/material/styles';
 export const TestimonialsBlockWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: ${props => props.theme.size.blockCenterIndent};
+  justify-content: center;
+  align-items: center;
+  padding-top: ${props => props.theme.size.indent7};  //TODO numbers - theme
+  padding-bottom: ${props => props.theme.size.indent7};
 `;
 
 export const TestimonialsHeader = styled.div`
@@ -17,8 +20,8 @@ export const TestimonialsHeader = styled.div`
 export const Title = styled.span`
   font-family:  ${props => props.theme.font.mainFont};
   font-weight: ${props => props.theme.size.fontWeight4};
-  font-size: ${props => props.theme.size.fontSize6};
-  color: ${props => props.theme.color.black};
+  font-size: ${props => props.theme.size.fontSize10};
+  color: ${props => props.theme.color.blackFont};
 `;
 
 export const Buttons = styled.div`
@@ -29,15 +32,17 @@ export const Buttons = styled.div`
 export const TestimonialsCards = styled.div`
   display: flex;
   gap: ${props => props.theme.size.indent5};
-  overflow: scroll;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  padding: ${props => props.theme.size.indent6};
+  padding-top: ${props => props.theme.size.indent6};
+  padding-bottom: ${props => props.theme.size.indent6};
 `;
 
 export const ArrowIcon = styled.img`
 
+`;
+
+export const TestimonialsContent = styled.div`
+  max-width: 60%;
+  width: 60%;
 `;
 
 export const ArrowButton = styledMUI(Button)({

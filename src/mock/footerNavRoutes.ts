@@ -7,39 +7,39 @@ import youtubeIcon from '../assets/youtubeIcon.png';
 
 export const aboutFooterNavLinks = [
   { value: 'About', to: '/' },
-  { value: 'Home', to: '/' },
-  { value: 'About Us', to: '/' },
-  { value: 'Services', to: '/' },
-  { value: 'Solutions', to: '/' }
+  { value: 'Home', to: '/home' },
+  { value: 'About Us', to: '/about' },
+  { value: 'Services', to: '/services' },
+  { value: 'Solutions', to: '/solutions' }
 ];
 
 export const informationFooterNavLinks = [
-  { value: 'Information', to: '/' },
-  { value: 'Contacts', to: '/' },
-  { value: 'Our team', to: '/' },
-  { value: 'Blog', to: '/' },
-  { value: 'FAQ', to: '/' }
+  { value: 'Information', to: '/information' },
+  { value: 'Contacts', to: '/contacts' },
+  { value: 'Our team', to: '/team' },
+  { value: 'Blog', to: '/blog' },
+  { value: 'FAQ', to: '/ifaq' }
 ];
 
 export const serviceFooterNavLinks = [
-  { value: 'Service', to: '/' },
-  { value: 'Pages', to: '/' },
-  { value: 'Elements', to: '/' },
-  { value: 'Site map', to: '/' },
-  { value: 'Pricing', to: '/' },
-  { value: 'FAQ', to: '/' }
+  { value: 'Service', to: '/services' },
+  { value: 'Pages', to: '/pages' },
+  { value: 'Elements', to: '/elements' },
+  { value: 'Site map', to: '/map' },
+  { value: 'Pricing', to: '/pricing' },
+  { value: 'FAQ', to: '/sfaq' }
 ];
 
 export const socialFooterLinks = [
-  { src: facebookIcon, to: '/' },
-  { src: twitterIcon, to: '/' },
-  { src: linkedInIcon, to: '/' },
-  { src: youtubeIcon, to: '/' },
-  { src: basketballIcon, to: '/' },
-  { src: beIcon, to: '/' }
+  { src: facebookIcon, to: '/facebook' },
+  { src: twitterIcon, to: '/twitter' },
+  { src: linkedInIcon, to: '/linked' },
+  { src: youtubeIcon, to: '/youtube' },
+  { src: basketballIcon, to: '/bascket' },
+  { src: beIcon, to: '/be' }
 ];
 
 export const judialFooterLinks = [
-  { value: 'Privacy policy', to: '/' },
-  { value: 'Terms of us', to: '/' }
+  { value: 'Privacy policy', to: '/policy' },
+  { value: 'Terms of us', to: '/term' }
 ];

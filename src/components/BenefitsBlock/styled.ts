@@ -16,9 +16,9 @@ export const DescriptionBlock = styled.div`
 export const Title = styled.span`
   font-family: ${props => props.theme.font.mainFont};
   font-weight: ${props => props.theme.size.fontWeight4};
-  font-size: ${props => props.theme.size.fontSize6};
+  font-size: ${props => props.theme.size.fontSize10};
   margin-bottom: ${props => props.theme.size.indent5};
-  color: ${props => props.theme.color.black};
+  color: ${props => props.theme.color.blackFont};
 `;
 
 export const DescriptionInfo = styled.span`

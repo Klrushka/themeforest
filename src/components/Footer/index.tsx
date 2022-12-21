@@ -35,7 +35,7 @@ import {
   TelAndMailBlock,
   Telephone,
   TitleOfBlock
-} from './style';
+} from './styled';
 
 export const Footer: React.FC = () => {
   return (

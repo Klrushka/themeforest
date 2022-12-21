@@ -8,7 +8,7 @@ import {
   NameAndPosition,
   Position,
   TestimationCardWrapper
-} from './style';
+} from './styled';
 
 export const TestimonialCard: React.FC<{
   icon: string

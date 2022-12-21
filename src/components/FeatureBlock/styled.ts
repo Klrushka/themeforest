@@ -24,7 +24,7 @@ export const DiscoverTitleBlock = styled.div`
   font-size: 57px;
   width: 70%;
   margin-right: ${props => props.theme.size.indent5};
-  color: ${props => props.theme.color.black};
+  color: ${props => props.theme.color.blackFont};
 `;
 
 export const DiscoverInfoBlock = styled.div`
@@ -76,10 +76,10 @@ export const LearnTitleBlock = styled.div`
   font-style: normal;
   font-weight: ${props => props.theme.size.fontWeight4};
   font-size: 38px;
-  color: ${props => props.theme.color.black};
+  color: ${props => props.theme.color.blackFont};
   width: 50%;
   margin-bottom: ${props => props.theme.size.indent5};
-  color: ${props => props.theme.color.black};
+  color: ${props => props.theme.color.blackFont};
 `;
 
 export const LearnText = styled.span`

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import { Button } from '@mui/material';
-import { styled as styledMUI } from '@mui/system';
 
 export const HeroBlockWrapper = styled.div`
   font-family: ${props => props.theme.font.mainFont};
@@ -15,8 +14,8 @@ export const InformationSection = styled.div`
 
 export const TitleWrapper = styled.div`
   width: 60%;
-  margin-right: ${props => props.theme.size.indent11};  
-  color: ${props => props.theme.color.black};
+  margin-right: ${props => props.theme.size.indent11};
+  color: ${props => props.theme.color.blackFont};
 `;
 
 export const DescriptionWrapper = styled.span`
@@ -37,31 +36,31 @@ export const Title = styled.span`
   font-family: ${props => props.theme.font.mainFont};
   width: 50%;
   font-weight: ${props => props.theme.size.fontWeight4};
-  font-size:  ${props => props.theme.size.fontSize7};
+  font-size:  ${props => props.theme.size.fontSize11};
   font-style: normal;
-  color: ${props => props.theme.color.black};;
+  color: ${props => props.theme.color.blackFont};
 
   &:last-child {
     color: ${props => props.theme.color.primary};
   }
 `;
 
-export const LearnMoreButton = styledMUI(Button)({
-  background: 'rgb(24, 95, 225)',
-  borderRadius: '70%',
-  height: '130px',
-  width: '130px',
-  fontSize: '14px',
-  borderColor: 'rgb(255, 255, 255)',
-  borderWidth: '10px',
-  borderStyle: 'solid',
-  position: 'absolute',
-  margin: '-70px auto auto 60%',
-  '&:hover': {
-    background: 'rgba(70, 125, 255, 1)'
-  }
+export const LearnMoreButton = styled(Button)`
+  background: ${props => props.theme.color.primary} !important;
+  border-radius: 70% !important;
+  height: 130px !important;
+  width: 130px !important;
+  font-size: ${props => props.theme.size.fontSize3} !important;
+  border-color:  ${props => props.theme.color.white} !important;
+  border-width: 10px !important;
+  border-style: solid !important;
+  position: absolute !important;
+  margin: -70px 0 0 1155px !important;
 
-});
+  &:hover: {
+    background: ${props => props.theme.color.primary} !important;
+  }
+`;
 
 export const LearnMoreButtonText = styled.span`
   border-style: solid;

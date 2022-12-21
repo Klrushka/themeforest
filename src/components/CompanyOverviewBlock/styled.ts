@@ -11,9 +11,9 @@ export const CompanyOverviewSectonWrapper = styled.div`
 
 export const Title = styled.div`
   font-family: ${props => props.theme.font.mainFont}; 
-  font-size: ${props => props.theme.size.fontSize6};  
+  font-size: ${props => props.theme.size.fontSize10};  
   font-weight: ${props => props.theme.size.fontWeight4};  
-  color: ${props => props.theme.color.black};
+  color: ${props => props.theme.color.blackFont};
 `;
 
 export const OverviewSection = styled.div`
@@ -45,7 +45,7 @@ export const OverviewDescription = styled.span`
 
 export const OverviewNumber = styled.span`
   font-weight: ${props => props.theme.size.fontWeight4};  
-  font-size: ${props => props.theme.size.fontSize8};  
+  font-size: ${props => props.theme.size.fontSize12};  
   color: ${props => props.theme.color.primary};
 `;
 

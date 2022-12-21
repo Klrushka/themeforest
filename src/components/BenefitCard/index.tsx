@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BenefitCardWrapper, CardIcon, CardText, CardTitle } from './style';
+import { BenefitCardWrapper, CardIcon, CardText, CardTitle } from './styled';
 
 export const BenefitCard: React.FC<{
   icon: string

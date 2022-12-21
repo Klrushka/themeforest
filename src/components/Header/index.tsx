@@ -19,7 +19,7 @@ import {
   LinkWrapper,
   Logo,
   Navigation
-} from './style';
+} from './styled';
 
 export const Header: React.FC = () => {
   const isShowExpandMenu: boolean = useSelector(

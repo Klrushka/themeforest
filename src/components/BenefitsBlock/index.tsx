@@ -14,7 +14,7 @@ import {
   DescriptionBlock,
   DescriptionInfo,
   Title
-} from './style';
+} from './styled';
 
 export const BenefitsBlock: React.FC = () => {
   return (

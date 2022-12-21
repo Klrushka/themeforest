@@ -18,7 +18,7 @@ import {
   OverviewNumbers,
   OverviewSection,
   Title
-} from './style';
+} from './styled';
 
 export const CompanyOverviewBlock: React.FC = () => {
   return (

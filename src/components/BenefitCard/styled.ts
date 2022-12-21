@@ -21,7 +21,7 @@ export const CardTitle = styled.span`
   font-weight: ${props => props.theme.size.fontWeight3};
   font-size: ${props => props.theme.size.fontSize5};
   font-family: ${props => props.theme.font.mainFont};
-  color: ${props => props.theme.color.black};
+  color: ${props => props.theme.color.blackFont};
   margin-bottom: ${props => props.theme.size.indent0};
   width: fit-content;
 `;
